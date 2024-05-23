@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Jesús Rodríguez">
+  <title>ej ampliación 3.3</title>
+  <style>
+    body{margin: 0; display: flex ; justify-content: right; align-items: center; height: 100vh ; background-image: url(fondo.avif); background-size: cover; background-repeat: no-repeat; text-wrap: wrap; word-wrap: break-word;}
+    #sp{color: black; font-size: 8rem; font-family: Times New Roman; width: 70vw; text-align: right; font-weight: bolder; padding-right: 10vw;}
+  </style>
+</head>
+
+<body>
+  <h1> <span id="sp"> ... </span> </h1>
+
+  <script>
+    let a = ["Buenas","Ponme un 10, pls","Me gustan las hamburguesas","No se que escribir","Me gustan los videojuegos"];
+    let i = 0;
+    cambiarfrase();
+
+    function cambiarfrase(){
+      if (i<a.length){
+      document.getElementById("sp").innerHTML=a[i];
+      i++;
+      setTimeout(cambiarfrase,3000);}
+      else {i=0; cambiarfrase()}
+    }
+  </script>
+</body>
+
+</html>

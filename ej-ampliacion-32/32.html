@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Jesús Rodríguez Palencia">
+  <title>ampliación 3.2</title>
+  <style>
+    body {display:flex; justify-content: center; align-items: center}
+    img{width: 100vw; height: 200vh; object-fit: cover; z-index: -1; position: absolute;}
+    a{text-decoration: none; color: white; font-size: 30px; font-weight: 200; font-family: Arial; padding-top: 300px;}
+  </style>
+</head>
+
+<body>
+  <img src="imagenes/41500.jpg" id="foto">
+  <a href="../ej-ampli-1-js/index.html">Buenas, h1 para ejer 3.8</a>
+
+  <script>
+    let a = ["imagenes/123.jpg","imagenes/41500.jpg","imagenes/20424687.jpg"];
+    cambiarimg();
+    function cambiarimg(){
+    let i = Math.floor(Math.random()*a.length);
+    document.getElementById("foto").src=a[i];
+    setTimeout(cambiarimg,3000);
+    }
+  </script>
+</body>
+
+</html>

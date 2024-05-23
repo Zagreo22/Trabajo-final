@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Jesús Rodríguez">
+  <title>ej ampli 1 js</title>
+  <style>
+    *{box-sizing: border-box;}
+    body{display: flex; justify-content: center;}
+    #grid{display: grid; grid-template-columns: 1fr 1fr 1fr; width: 90vw;}
+    .canción{text-align: center;}
+    img{width: 22vw; height: 22vw; margin: 2vw; object-fit: cover;}
+    audio{width: 22vw;}
+    @media screen and (max-width:600px) {
+      #grid{grid-template-columns: 1fr;}
+      img{width: 60vw; height: 60vw;}
+      audio{width: 60vw;}
+    }
+  </style>
+</head>
+
+<body>
+  <div id="grid">
+    <div class="canción">
+      <img src="imagenes/ma.jpeg" onclick="playSound1()">
+      <audio src="audio/onlymp3.to - Sticky M.A. Steve Lean Tom Ford-R9U9SliR1B8-192k-1703157521.mp3" id="audio1" controls loop></audio>
+    </div>
+    <div class="canción">
+      <img src="imagenes/cruzzi.jpeg" onclick="playSound2()">
+      <audio src="audio/onlymp3.to - CRUZ CAFUNÉ ABAMA JR. Suite ft. LEÏTI Visualizer -2wx8mRDVTYM-192k-1703157689.mp3" id="audio2" controls loop></audio>
+    </div>
+    <div class="canción">
+      <img src="imagenes/beef14.jpeg" onclick="playSound3()">
+      <audio src="audio/onlymp3.to - Yung Beef DRUGSTORY-axhxkZz1ZoQ-192k-1703157873.mp3" id="audio3" controls loop></audio>
+    </div>
+    <div class="canción">
+      <img src="imagenes/peep.jpg" onclick="playSound4()">
+      <audio src="audio/onlymp3.to - Lil Peep the song they played when i crashed into the wall feat. lil tracy Official Audio -Pd8khriHqyc-192k-1703158119.mp3" id="audio4" controls loop></audio>
+    </div>
+    <div class="canción">
+      <img src="imagenes/goa.jpg" onclick="playSound5()">
+      <audio src="audio/onlymp3.to - Goa In The City ft. Fish Narc-AFE059eWgCs-192k-1703158170.mp3" id="audio5" controls loop></audio>
+    </div>
+    <div class="canción">
+      <img src="imagenes/wrld.jpeg" onclick="playSound6()">
+      <audio src="audio/onlymp3.to - Juice WRLD Lucid Dreams Directed by Cole Bennett -mzB1VGEGcSU-192k-1703158216.mp3" id="audio6" controls loop></audio>
+    </div>
+  </div>
+  <script>
+    function playSound1(){
+      let audio = document.getElementByIfd("audio1");
+      if (audio.paused) audio.play();
+      else audio.paused();
+    }
+    function playSound2(){
+      let audio = document.getElementByIfd("audio2");
+      if (audio.paused) audio.play();
+      else audio.paused();
+    }
+    function playSound3(){
+      let audio = document.getElementByIfd("audio3");
+      if (audio.paused) audio.play();
+      else audio.paused();
+    }
+    function playSound4(){
+      let audio = document.getElementByIfd("audio4");
+      if (audio.paused) audio.play();
+      else audio.paused();
+    }
+    function playSound5(){
+      let audio = document.getElementByIfd("audio5");
+      if (audio.paused) audio.play();
+      else audio.paused();
+    }
+    function playSound6(){
+      let audio = document.getElementByIfd("audio6");
+      if (audio.paused) audio.play();
+      else audio.paused();
+    }
+  </script>
+</body>
+
+</html>
